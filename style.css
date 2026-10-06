@@ -1017,6 +1017,7 @@ html.darkmode.amoled-dark #leftbar_tab_tools ul li {
 }
 #fabtn_reading_progress{
 	height: 30px;
+	display: none;
 }
 #fabtn_reading_progress_bar{
 	position: absolute;
@@ -4330,18 +4331,18 @@ html.using-safari #fabtn_blog_settings_popup{
    and the profile/sidebar on the right for wide screens. */
 @media screen and (min-width: 901px){
 	#content{
-		max-width: 1180px;
-		margin-top: -18vh;
-		padding: 0 18px;
+		max-width: 1200px;
+		margin-top: -5vh;
+		padding: 0 25px;
 	}
 	#primary{
-		width: calc(100% - 305px);
+		width: calc(100% - 280px);
 		float: left;
 	}
 	#leftbar{
-		width: 305px;
+		width: 280px;
 		float: right;
-		padding: 0 0 0 22px;
+		padding: 0 0 0 40px;
 	}
 	#main{
 		padding: 0;
@@ -4355,18 +4356,21 @@ html.using-safari #fabtn_blog_settings_popup{
 		-webkit-backdrop-filter: blur(10px);
 	}
 	#leftbar_part2.sticky{
-		width: 283px;
+		width: 240px;
 	}
 	.post.card{
 		margin-bottom: 18px;
-		border-radius: 10px;
+		border-radius: 4px;
 		box-shadow: 0 10px 28px rgba(32, 42, 68, .13) !important;
 	}
 	#leftbar_part1,
 	#leftbar_part2,
 	#footer{
-		border-radius: 10px;
+		border-radius: 4px;
 		box-shadow: 0 10px 28px rgba(32, 42, 68, .13) !important;
+	}
+	#main .post-header{
+		text-align: left !important;
 	}
 	#leftbar_part2{
 		margin-top: 16px;
@@ -4375,18 +4379,19 @@ html.using-safari #fabtn_blog_settings_popup{
 
 /* A compact hero leaves the page content visible, like the reference layout. */
 .banner{
-	height: 42vh;
-	min-height: 280px;
+	height: 46vh;
+	min-height: 320px;
 	margin-bottom: 28px;
 }
 .banner-container{
-	height: 42vh !important;
-	min-height: 280px;
+	height: 46vh !important;
+	min-height: 320px;
 }
 .banner-title{
-	font-size: 2rem;
-	font-weight: 600;
-	letter-spacing: .04em;
+	font-size: 1.8rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	top: 25%;
 	text-shadow: 0 3px 18px rgba(0, 0, 0, .32);
 }
 
