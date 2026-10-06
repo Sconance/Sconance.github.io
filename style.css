@@ -4424,6 +4424,12 @@ html.using-safari #fabtn_blog_settings_popup{
 #footer strong{
 	color: #fff !important;
 }
+.footer-image-notice{
+	margin-top: 4px;
+	font-size: 12px;
+	line-height: 1.6;
+	opacity: .72;
+}
 
 /* Blue-and-white palette: blue surfaces with clean white reading cards. */
 #navbar-main{
