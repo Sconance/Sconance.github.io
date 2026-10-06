@@ -4324,6 +4324,119 @@ html.using-safari .post-donate .donate-btn:hover ~ .donate-qrcode {
 html.using-safari #fabtn_blog_settings_popup{
 	-webkit-transform: translate3d(0,0,0) !important;
 }
+
+/* ========== Homepage desktop layout refresh ========== */
+/* Keep the existing markup and mobile drawer, but present posts on the left
+   and the profile/sidebar on the right for wide screens. */
+@media screen and (min-width: 901px){
+	#content{
+		max-width: 1180px;
+		margin-top: -18vh;
+		padding: 0 18px;
+	}
+	#primary{
+		width: calc(100% - 305px);
+		float: left;
+	}
+	#leftbar{
+		width: 305px;
+		float: right;
+		padding: 0 0 0 22px;
+	}
+	#main{
+		padding: 0;
+	}
+	#leftbar_part1,
+	#leftbar_part2,
+	#footer,
+	.post.card{
+		background: rgba(255, 255, 255, .93) !important;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+	}
+	#leftbar_part2.sticky{
+		width: 283px;
+	}
+	.post.card{
+		margin-bottom: 18px;
+		border-radius: 10px;
+		box-shadow: 0 10px 28px rgba(32, 42, 68, .13) !important;
+	}
+	#leftbar_part1,
+	#leftbar_part2,
+	#footer{
+		border-radius: 10px;
+		box-shadow: 0 10px 28px rgba(32, 42, 68, .13) !important;
+	}
+	#leftbar_part2{
+		margin-top: 16px;
+	}
+}
+
+/* A compact hero leaves the page content visible, like the reference layout. */
+.banner{
+	height: 42vh;
+	min-height: 280px;
+	margin-bottom: 28px;
+}
+.banner-container{
+	height: 42vh !important;
+	min-height: 280px;
+}
+.banner-title{
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: .04em;
+	text-shadow: 0 3px 18px rgba(0, 0, 0, .32);
+}
+
+@media screen and (min-width: 1700px){
+	#content{
+		max-width: 1320px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.banner,
+	.banner-container{
+		height: 36vh !important;
+		min-height: 230px;
+	}
+	.banner-title{
+		font-size: 1.5rem;
+		padding: 0 24px;
+	}
+}
+
+/* Footer is intentionally darker than content cards so it sits quietly over
+   image backgrounds instead of appearing as a second blank article card. */
+#footer{
+	background: rgba(22, 143, 229, .88) !important;
+	color: rgba(255, 255, 255, .82);
+	border: 1px solid rgba(255, 255, 255, .12) !important;
+}
+#footer a,
+#footer strong{
+	color: #fff !important;
+}
+
+/* Blue-and-white palette: blue surfaces with clean white reading cards. */
+#navbar-main{
+	background-color: rgba(22, 143, 229, .94) !important;
+}
+@media screen and (min-width: 901px){
+	#leftbar_part1,
+	#leftbar_part2,
+	#footer,
+	.post.card{
+		box-shadow: 0 10px 28px rgba(10, 92, 158, .18) !important;
+	}
+	#leftbar_part1,
+	#leftbar_part2,
+	.post.card{
+		background: rgba(255, 255, 255, .96) !important;
+	}
+}
 html.using-safari #blog_setting_toggle_darkmode_and_amoledarkmode:before ,
 html.using-safari #blog_setting_card_radius_to_default:before{
 	transform: translate3d(-50%, 0, 0) !important;
