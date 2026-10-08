@@ -284,12 +284,24 @@
 		<span class="banner-subtitle d-block">真実はいつもひとつ</span></div>
 	</div>
 
-	
+	<script>
+	(function () {
+		var previous = null;
+		try { previous = sessionStorage.getItem('argon-background'); } catch (error) {}
+		var choices = [1, 2, 3, 4, 5, 6, 7].filter(function (number) {
+			return String(number) !== previous;
+		});
+		var number = choices[Math.floor(Math.random() * choices.length)];
+		try { sessionStorage.setItem('argon-background', String(number)); } catch (error) {}
+		document.documentElement.style.setProperty('--argon-random-background',
+			'url("/assets/img/backgrounds/' + number + '.png")');
+	})();
+	</script>
 	
 	
 		<style>
 			section.banner{
-				background-image: url(/assets/img/backgrounds/5.png) !important;
+				background-image: var(--argon-random-background, url(/assets/img/backgrounds/1.png)) !important;
 			}
 		</style>
 	
@@ -306,7 +318,7 @@
 			top: 0;
 			bottom: 0;
 			z-index: -2;
-			background: url(/assets/img/backgrounds/5.png);
+			background: var(--argon-random-background, url(/assets/img/backgrounds/1.png));
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
