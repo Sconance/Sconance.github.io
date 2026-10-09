@@ -8,7 +8,7 @@
       <link href="/AstrBot%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E6%8F%92%E4%BB%B6/"/>
       <url>/AstrBot%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E6%8F%92%E4%BB%B6/</url>
       
-        <content type="html"><![CDATA[<p>利用codex辅助（实际上全是codex生成）生成了一个 AstrBot 消息访问控制插件</p><span id="more"></span><p>项目地址：<a href="https://github.com/Sconance/astrbot_plugin_access_control">astrbot_plugin_access_control</a></p><p>这个插件主要用来管理机器人可以响应的群聊、用户和消息，让它在需要的时候回复，也能在不需要的时候安静一点。</p><p>目前支持群白名单、用户忽略名单和私聊开关，还可以过滤群聊中实际 @ 到指定 QQ 的消息。不符合规则的消息会直接停止处理，不额外发送拦截提示。</p><p>管理员也可以通过聊天指令禁用或恢复某个用户的触发权限，修改会保存到配置里，不需要重启机器人。日常管理起来方便一些。</p>]]></content>
+        <content type="html"><![CDATA[<p>利用codex辅助（实际上全是codex生成）生成了一个 AstrBot 消息访问控制插件</p><span id="more"></span><p>项目地址：<a href="https://github.com/Sconance/astrbot_plugin_access_control">astrbot_plugin_access_control</a></p><p>这个插件主要用来管理机器人可以响应的群聊、用户和消息，让它在需要的时候回复。</p><p>目前支持群白名单、用户忽略名单和私聊开关，还可以过滤群聊中实际 @ 到指定 QQ 的消息。不符合规则的消息会直接停止处理，不额外发送拦截提示。</p><p>管理员也可以通过聊天指令禁用或恢复某个用户的触发权限，修改会保存到配置里，不需要重启机器人。日常管理起来方便一些。</p>]]></content>
       
       
       <categories>
@@ -21,8 +21,6 @@
         <tags>
             
             <tag> AstrBot </tag>
-            
-            <tag> 插件 </tag>
             
         </tags>
       
